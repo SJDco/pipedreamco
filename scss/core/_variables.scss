@@ -1,17 +1,23 @@
 /**
 * Typography
 */
-$font: 'Helvetica', 'Arial', sans-serif;
+$font: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 
 /**
 * Layout
 */
 $spacingUnit: 24px;
 
+$navHeight: 100px;
+$logoHeight: 60px;
+
 /**
 * Colours
 */
 // Theme colours
+$teal: #28a3b2;
+
+$primary: $teal;
 
 // Shader Colors
 $white: #fff;
@@ -25,5 +31,5 @@ $shaders: ($white, $shade, $shadow, $dark, $black);
 $shader-classes: (white, shade, shadow, dark, black);
 
 // Color helper variables
-$colors: (  ); // Put all theme colors in this list
-$color-classes: (  ); // Put the corresponding color names in this list
+$colors: ( $primary ); // Put all theme colors in this list
+$color-classes: ( primary ); // Put the corresponding color names in this list

@@ -1,0 +1,76 @@
+.nav {
+    // background-color: $shade;
+
+    .left, .right {
+        height: $navHeight;
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
+    .nav__logo {
+        height: $logoHeight;
+    }
+
+    .nav__nav {
+        text-align: right;
+        li {
+            display: inline-block;
+
+            &:last-child a {
+                padding-right: 0;
+            }
+
+            a {
+                display: block;
+                padding: 16px;
+                color: $dark;
+                text-transform: uppercase;
+                font-size: 1em;
+
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    #animated-hamburger {
+        @include createHamburger($width: 35px, $height: 25px, $barHeight: 5px, $barColor: $dark, $duration: .3s, $rotation: 90deg);
+    }
+
+
+    .mobile-nav {
+        display: none;
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+
+                display: block;
+                text-align: center;
+
+                &:nth-child(odd) a {
+                    background-color: darken($shade,2%);
+                }
+
+                a {
+                    background-color: $shade;
+                    display: block;
+                    padding: 16px;
+                    color: black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }

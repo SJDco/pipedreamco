@@ -14,4 +14,10 @@ $(function () {
     // Configure matchHeight on the .matchHeight class
     $('.matchHeight').matchHeight();
 
+    // Animate the hamburger when clicked
+    $('#animated-hamburger').click(function() {
+        $(this).toggleClass("active");
+        $('#mobile-nav').slideToggle(200);
+    });
+
 });

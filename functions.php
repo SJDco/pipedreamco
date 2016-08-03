@@ -18,6 +18,7 @@ function bedrock_scripts() {
     // Custom scripts
     wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/92d1da124e.js', null, null, true );
     wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/bower_components/matchHeight/dist/jquery.matchHeight-min.js', null, null, true );
+    wp_enqueue_script( 'owl', get_template_directory_uri() . '/bower_components/owl.carousel/dist/owl.carousel.min.js', null, null, true );
 
     // User scripts
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/min/app-min.js', null, null, true );
