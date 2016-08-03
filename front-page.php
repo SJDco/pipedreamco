@@ -2,4 +2,6 @@
 
 <?php get_template_part('parts/hero-slider'); ?>
 
+<?php get_template_part('parts/site-notification'); ?>
+
 <?php get_footer(); ?>

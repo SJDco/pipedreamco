@@ -1,0 +1,14 @@
+.site-notification {
+    background-color: $primary;
+    padding: 10px 0;
+    text-align: center;
+    p {
+        color: white;
+        margin: 0 !important;
+        // line-height: 1;
+
+        .bigger {
+            font-size: 1.125em;
+        }
+    }
+}

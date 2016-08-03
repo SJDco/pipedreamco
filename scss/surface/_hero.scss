@@ -43,9 +43,10 @@
 
 .hero-slider {
     .owl-dots {
-        margin-top: -40px !important;
+        margin-top: -30px !important;
         position: relative;
         z-index: 100;
+        bottom: 15px;
     }
 
     .owl-dot {
