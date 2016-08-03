@@ -20,4 +20,12 @@ $(function () {
         $('#mobile-nav').slideToggle(200);
     });
 
+    // Init Owl carousel
+    $('.hero-slider').owlCarousel({
+        items: 1,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        loop: true
+    });
+
 });

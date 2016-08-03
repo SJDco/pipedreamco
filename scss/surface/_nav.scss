@@ -44,7 +44,7 @@
     }
 
     #animated-hamburger {
-        @include createHamburger($width: 35px, $height: 25px, $barHeight: 5px, $barColor: $dark, $duration: .3s, $rotation: 90deg);
+        @include createHamburger($width: 35px, $height: 25px, $barHeight: 5px, $barColor: $dark, $duration: .3s, $rotation: 180deg);
     }
 
 

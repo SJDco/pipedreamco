@@ -1,1 +1,1 @@
-"use strict";$(document).foundation(),$(function(){window.console.log("Now Running: Sam Bedrock Theme"),$(".matchHeight").matchHeight(),$("#animated-hamburger").click(function(){$(this).toggleClass("active"),$("#mobile-nav").slideToggle(200)})});
+"use strict";$(document).foundation(),$(function(){window.console.log("Now Running: Sam Bedrock Theme"),$(".matchHeight").matchHeight(),$("#animated-hamburger").click(function(){$(this).toggleClass("active"),$("#mobile-nav").slideToggle(200)}),$(".hero-slider").owlCarousel({items:1,autoplay:!0,animateOut:"fadeOut",loop:!0})});
