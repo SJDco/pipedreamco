@@ -1,0 +1,18 @@
+/*!
+Theme Name: Sam's Bedrock
+Theme URI: http://weareforge.co
+Description: Boilerplate theme for all new WP Themes made by Sam @ Forge Collective
+Version: 1.4.0
+Author: Forge Collective
+*/
+
+/** Import the core */
+@import "core/app";
+@import "core/variables";
+@import "core/wordpress";
+@import "core/typography";
+@import "core/mixins";
+@import "core/atoms";
+@import "core/buttons";
+
+/** Import the surface */
