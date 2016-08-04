@@ -1,6 +1,22 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.sep {
+    .sep__sep {
+        width: 100%;
+        height: 1px;
+        background-color: darken($shade, 10%);
+    }
+}
+
 %padded {
     padding: 48px 0;
 }
+    %padded--half {
+        padding: 24px 0;
+    }
+    
 %occupy-parent {
     position: absolute;
     top: 0;

@@ -21,3 +21,15 @@ Author: Sam Davis <sam@sjd.co>
 @import "surface/hero";
 @import "surface/site-notification";
 @import "surface/featured";
+@import "surface/sitemap";
+
+/*
+|--------------------------------------------------------------------------
+| Plugin hacks
+|--------------------------------------------------------------------------
+*/
+
+// Hide instagram load more button
+.wdi_load_more {
+    display: none;
+}
