@@ -1,0 +1,44 @@
+.featured {
+    @extend %padded;
+}
+
+    .featured-category {
+        text-align: center;
+        padding: 100px 0;
+        overflow: hidden;
+        position: relative;
+
+        margin-bottom: 15px;
+
+        @include breakpoint(medium) {
+            padding: 150px 0;
+            margin-bottom: 0;
+        }
+
+        .featured-category-bg {
+            @extend .cover-image;
+            @extend %occupy-parent;
+            transition: .75s ease all;
+        }
+        .featured-category-bg-overlay {
+            @extend %occupy-parent;
+            transition: .5s ease all;
+            background-color: black;
+            opacity: 0;
+        }
+        &:hover .featured-category-bg-overlay {
+            opacity: 0.25;
+        }
+
+        a {
+            position: relative;
+            z-index: 10;
+
+            &:hover + .featured-category-bg {
+                transform: scale(1.1);
+            }
+            &:hover + .featured-category-bg + .featured-category-bg-overlay {
+                opacity: 0.5;
+            }
+        }
+    }
