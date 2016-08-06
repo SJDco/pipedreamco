@@ -34,4 +34,11 @@ $(function () {
     // Init keepsquared to isntagram images
     $('.instagram-image').keepSquared();
 
+    // Show mobile-menu sub menus when the parens is clicked/tapped
+    $('.mobile-nav .menu-item-has-children a').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('sub-menu-active');
+        $(this).next().slideToggle(200);
+    });
+
 });

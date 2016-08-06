@@ -104,3 +104,13 @@ function frg_list_pages_with_intro( $args ) {
 
     wp_list_pages( $args );
 }
+
+/*
+|--------------------------------------------------------------------------
+| Add WordPress menu functionality
+|--------------------------------------------------------------------------
+*/
+function register_main_menu() {
+    register_nav_menu( 'main-menu', __('Main Menu') );
+}
+add_action( 'init', 'register_main_menu' );
