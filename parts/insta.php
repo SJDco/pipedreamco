@@ -6,13 +6,15 @@
                 <a style="color: black;" href="<?php echo get_option('instagram_url'); ?>">@pipedreamco</a>
             </p>
             <p style="color: #aaa; margin-top: 0;">
-                #pipedreamco
+                #<?php echo get_option('instagram_search_term'); ?>
             </p>
         </div>
     </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <?php echo wdi_feed(array('id'=>'1')); ?>
-        </div>
+    <div class="row row--gutter-half" id="instagram-feed">
+
+            <!-- Populated by sjdInstagramFeed.js -->
+            <div class="text-center" style="margin-bottom: 16px;">
+                <i class="fa fa-spin fa-circle-o-notch"></i>
+            </div>
     </div>
 </section>

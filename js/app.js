@@ -1,4 +1,4 @@
-/*global document, window, $ */
+/*global document, window, $, sjdInstagramFeed */
 /*jshint globalstrict: true */
 'use strict';
 
@@ -9,7 +9,7 @@ $(document).foundation();
 $(function () {
 
     // App code here...
-    window.console.log("Now Running: Sam Bedrock Theme");
+    // window.console.log("Now Running: Sam Bedrock Theme");
 
     // Configure matchHeight on the .matchHeight class
     $('.matchHeight').matchHeight();
@@ -27,5 +27,11 @@ $(function () {
         animateOut: 'fadeOut',
         loop: true
     });
+
+    // Init sjdInstagramFeed
+    sjdInstagramFeed.init();
+
+    // Init keepsquared to isntagram images
+    $('.instagram-image').keepSquared();
 
 });

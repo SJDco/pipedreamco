@@ -6,8 +6,4 @@
 
 <?php get_template_part('parts/featured'); ?>
 
-<?php get_template_part('parts/seperator'); ?>
-
-<?php get_template_part('parts/insta'); ?>
-
 <?php get_footer(); ?>

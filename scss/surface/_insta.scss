@@ -1,0 +1,16 @@
+#instagram-feed {
+    // margin-bottom: 16px;
+}
+
+    .instagram-image {
+        // height: 100px;
+        width: 100%;
+        @extend .cover-image;
+        box-shadow: 0 1px 3px rgba(black,.3);
+        transition: .2s ease all;
+        margin-bottom: 15px;
+        &:hover {
+            transform: scale(1.025);
+            box-shadow: 0 1px 5px rgba(black,.5);
+        }
+    }

@@ -25,7 +25,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-wp-install-url="<?php echo bloginfo('url'); ?>">
 
     <header class="nav">
         <div class="row">

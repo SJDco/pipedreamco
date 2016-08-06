@@ -1,5 +1,9 @@
 <?php get_template_part('parts/seperator'); ?>
 
+<?php get_template_part('parts/insta'); ?>
+
+<?php get_template_part('parts/seperator'); ?>
+
 <section class="sitemap">
     <div class="row">
 

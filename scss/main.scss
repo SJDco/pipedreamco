@@ -22,6 +22,8 @@ Author: Sam Davis <sam@sjd.co>
 @import "surface/site-notification";
 @import "surface/featured";
 @import "surface/sitemap";
+@import "surface/page";
+@import "surface/insta";
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +34,12 @@ Author: Sam Davis <sam@sjd.co>
 // Hide instagram load more button
 .wdi_load_more {
     display: none;
+}
+
+.insta {
+    padding: 16px 0 0;
+}
+
+footer.footer {
+    padding: 16px 0 0;
 }

@@ -1,4 +1,13 @@
 .sitemap {
+    .columns {
+        @include breakpoint(small only) {
+            margin-bottom: 36px;
+            text-align: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     @extend %padded--half;
 
     li {
