@@ -3,6 +3,39 @@
     background-position: center;
 }
 
+%headline-styles {
+    display: inline-block;
+    background-color: white;
+    // font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 24px;
+    padding: 0 20px;
+
+    @include breakpoint(medium) {
+        padding: 0 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.hero--page {
+
+    background-color: $shade;
+    text-align: center;
+
+    padding: 100px 0;
+
+    @include breakpoint(medium) {
+        padding: 150px 0;
+    }
+
+    @extend .cover-image;
+
+    h1.headline {
+        @extend %headline-styles;
+        margin-bottom: 0;
+    }
+}
+
 .hero--home {
 
     .slide {
@@ -20,17 +53,7 @@
 
 
         h1 {
-            display: inline-block;
-            background-color: white;
-            // font-size: 2.5em;
-            font-weight: 400;
-            margin-bottom: 24px;
-            padding: 0 20px;
-
-            @include breakpoint(medium) {
-                padding: 0 100px;
-                margin-bottom: 100px;
-            }
+            @extend %headline-styles;
         }
 
         .button--primary {

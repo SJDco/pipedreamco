@@ -114,3 +114,44 @@ function register_main_menu() {
     register_nav_menu( 'main-menu', __('Main Menu') );
 }
 add_action( 'init', 'register_main_menu' );
+
+/*
+|--------------------------------------------------------------------------
+| WooCommerce Support
+|--------------------------------------------------------------------------
+*/
+
+// Unhook default woocommerce wrappers
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+// Remove breadcrumbs
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+
+// Unhook sidebar from woocommerce
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+// Hook my own custom content wrappers
+add_action('woocommerce_before_main_content', 'pipedream_content_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'pipedream_content_wrapper_end', 10);
+
+function pipedream_content_wrapper_start() {
+    get_template_part('parts/page-hero');
+    get_template_part('parts/site-notification');
+    echo '<div class="row">';
+    echo '<div class="small-12 columns">';
+    echo '<div class="content-area">';
+}
+
+function pipedream_content_wrapper_end() {
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+}
+
+
+// Declare WooCommerce Support
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}

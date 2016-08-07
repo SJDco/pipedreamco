@@ -1,4 +1,4 @@
-.nav {
+header.nav {
     // background-color: $shade;
 
     .left, .right {
@@ -15,7 +15,7 @@
     }
 }
 
-    .nav__logo {
+    .nav .nav__logo {
         height: $logoHeight;
     }
 
