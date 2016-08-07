@@ -41,4 +41,9 @@ $(function () {
         $(this).next().slideToggle(200);
     });
 
+
+    // Add appropriate wrappers around content-area h1s
+    $('.content-area .page-title').wrap('<div class="page-title-container">')
+    .parent().append('<div class="page-title-line"></div>');
+
 });
