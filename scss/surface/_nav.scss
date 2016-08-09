@@ -1,4 +1,5 @@
 header.nav {
+    position: relative;
     // background-color: $shade;
 
     .left, .right {
@@ -187,3 +188,33 @@ header.nav {
             }
         }
     }
+
+.floating-cart {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(80%);;
+    right: 0;
+    background-color: $primary;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(black, .3);
+    border-radius: 10px 0 0 10px;
+    transition: .2s ease all;
+
+    @include breakpoint(1293) {
+        display: block;
+    }
+
+    &:hover {
+        transform: translateY(-50%) translateX(0%);;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 24px;
+        color: white;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

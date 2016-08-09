@@ -136,7 +136,9 @@ add_action('woocommerce_before_main_content', 'pipedream_content_wrapper_start',
 add_action('woocommerce_after_main_content', 'pipedream_content_wrapper_end', 10);
 
 function pipedream_content_wrapper_start() {
-    get_template_part('parts/page-hero');
+    if ( is_post_type_archive( 'product' )) {
+        get_template_part('parts/page-hero');
+    }
     get_template_part('parts/site-notification');
     echo '<div class="row">';
     echo '<div class="small-12 columns">';
@@ -154,4 +156,12 @@ function pipedream_content_wrapper_end() {
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
+}
+
+add_action( 'woocommerce_single_product_summary', 'show_size_chart', 20 );
+function show_size_chart() {
+    $link = get_field('sizing_chart', 4);
+    echo "<div class='sizing-chart'>";
+        echo "<a href='$link' target='_blank'>Sizing Chart</a>";
+    echo "</div>";
 }

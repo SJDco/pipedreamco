@@ -48,6 +48,16 @@
 
             </div>
         </div>
+
+
+        <a href="<?php echo wc_get_cart_url(); ?>" class="floating-cart">
+            <li><i class="fa fa-shopping-cart"></i></li>
+            <li>
+                <?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+            </li>
+            <li>$0.00</li>
+        </a>
+
     </header>
 
     <nav id="mobile-nav" class="mobile-nav hide-for-medium">

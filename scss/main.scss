@@ -24,6 +24,7 @@ Author: Sam Davis <sam@sjd.co>
 @import "surface/sitemap";
 @import "surface/page";
 @import "surface/insta";
+@import "surface/woocommerce";
 
 /*
 |--------------------------------------------------------------------------
@@ -42,18 +43,4 @@ Author: Sam Davis <sam@sjd.co>
 
 footer.footer {
     padding: 16px 0 0;
-}
-
-/*
-|--------------------------------------------------------------------------
-| WooCommerce Alterations
-|--------------------------------------------------------------------------
-*/
-
-// Change color of WooCommerce info boxes
-.woocommerce-info {
-    border-top-color: $primary !important;
-    &:before {
-        color: $primary !important;
-    }
 }
