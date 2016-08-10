@@ -1,0 +1,25 @@
+/**
+* Typography
+*/
+/**
+* Layout
+*/
+/**
+* Colours
+*/
+a {
+  color: #28a3b2 !important; }
+
+#login h1 a {
+  background-image: url("http://sams-mbp.local:5757/wp-content/themes/pipedreamco/images/pipedream-logo.svg") !important;
+  background-size: 150px 150px;
+  width: 150px;
+  padding-bottom: 20px; }
+
+#login p.message {
+  border-left-color: #28a3b2; }
+
+#wp-submit {
+  background-color: #28a3b2;
+  border-color: #1f7d88;
+  box-shadow: 0px 1px 0px 0px #1f7d88; }

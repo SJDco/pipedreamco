@@ -32,9 +32,9 @@
             <li><a href="mailto:info@pipedreamco.com.au"></a></li>
             <li><a href="#">#pipedreamco</a></li>
             <ul class="social-links">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="<?php echo get_option('facebook_url') ?>"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo get_option('instagram_url') ?>"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="<?php echo get_option('google_plus_url') ?>"><i class="fa fa-google-plus"></i></a></li>
             </ul>
         </div>
 

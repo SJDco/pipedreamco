@@ -5,6 +5,23 @@
     },
     "setting_fields": [
         {
+            "section_name": "Social",
+            "fields": [
+                {
+                    "field_name": "Facebook URL",
+                    "input_type": "url"
+                },
+                {
+                    "field_name": "Instagram URL",
+                    "input_type": "url"
+                },
+                {
+                    "field_name": "Google Plus URL",
+                    "input_type": "url"
+                }
+            ]
+        },
+        {
             "section_name": "Instagram Functionality",
             "fields": [
                 {

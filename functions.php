@@ -46,6 +46,18 @@ remove_action( 'wp_head', 'wlwmanifest_link' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
+// Customise footer text
+function sjd_footer_text () {
+    echo 'Made with <i style="color: #ef404a;" class="fa fa-heart"></i> by <a style="color: #ef404a;" href="http://sjd.co/" target="_blank">Sam Davis</a>';
+}
+add_filter('admin_footer_text', 'sjd_footer_text');
+
+// Customise login page
+function login_page_css() { ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/admin.css">
+<?php }
+add_action('login_head', 'login_page_css', 10);
+
 
 /*
 |--------------------------------------------------------------------------
@@ -170,3 +182,32 @@ function show_size_chart() {
         echo "<a href='$link' target='_blank'>Sizing Chart</a>";
     echo "</div>";
 }
+
+// Change woocommerce button texts
+// add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
+// /**
+//  * custom_woocommerce_template_loop_add_to_cart
+// */
+// function custom_woocommerce_product_add_to_cart_text() {
+// 	global $product;
+//
+// 	$product_type = $product->product_type;
+//
+// 	switch ( $product_type ) {
+// 		case 'external':
+// 			return __( 'Buy product', 'woocommerce' );
+// 		break;
+// 		case 'grouped':
+// 			return __( 'View products', 'woocommerce' );
+// 		break;
+// 		case 'simple':
+// 			return __( 'Add to cart', 'woocommerce' );
+// 		break;
+// 		case 'variable':
+// 			return __( 'Select options', 'woocommerce' );
+// 		break;
+// 		default:
+// 			return __( 'Read more', 'woocommerce' );
+// 	}
+//
+// }

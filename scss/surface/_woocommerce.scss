@@ -70,10 +70,16 @@
         color: $primary !important;
         transition: .2s ease all;
         font-size: 14px !important;
-        padding: 11px 20px !important;
+        padding: 11px !important;
         &:hover {
             background-color: $primary !important;
             color: white !important;
+        }
+
+        @include breakpoint(small only) {
+            letter-spacing: -0.25px;
+            font-size: 10px !important;
+            padding: 10px 7.5px !important;
         }
     }
 }
@@ -129,4 +135,17 @@
             color: $dark ;
         }
     }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Checkout payment form
+|--------------------------------------------------------------------------
+*/
+.woocommerce-checkout-payment {
+    background-color: transparent !important;
+    border: 2px solid $primary;
+}
+.wc_payment_methods {
+    border-bottom-color: $primary !important;
 }

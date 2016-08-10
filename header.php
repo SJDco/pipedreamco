@@ -50,12 +50,14 @@
         </div>
 
 
-        <a href="<?php echo wc_get_cart_url(); ?>" class="floating-cart">
+        <a href="<?php echo wc_get_cart_url(); ?>" class="floating-cart <?php if (WC()->cart->get_cart_contents_count() < 1) echo "hide" ?>">
             <li><i class="fa fa-shopping-cart"></i></li>
             <li>
-                <?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+                <?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
             </li>
-            <li>$0.00</li>
+            <li>
+                <?php echo WC()->cart->get_cart_total(); ?>
+            </li>
         </a>
 
     </header>

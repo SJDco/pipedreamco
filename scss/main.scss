@@ -44,3 +44,28 @@ Author: Sam Davis <sam@sjd.co>
 footer.footer {
     padding: 16px 0 0;
 }
+
+/*
+|--------------------------------------------------------------------------
+| Gravity Customisations
+|--------------------------------------------------------------------------
+*/
+
+
+#gform_wrapper_1 {
+    input, textarea {
+        padding: 10px;
+    }
+}
+#gform_submit_button_1 {
+    background-color: transparent;
+    border: 2px solid $primary;
+    padding: 10px 20px !important;
+    border-radius: 3px;
+    color: $primary;
+    transition: .2s ease all;
+    &:hover {
+        background-color: $primary;
+        color: white;
+    }
+}

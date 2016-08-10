@@ -1,4 +1,4 @@
-<div class="hero--home">
+<section class="hero--home">
 
     <div class="owl-carousel owl-theme hero-slider">
 
@@ -21,4 +21,4 @@
 
     </div>
 
-</div>
+</section>

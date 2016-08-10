@@ -35,8 +35,12 @@ $(function () {
     $('.instagram-image').keepSquared();
 
     // Show mobile-menu sub menus when the parens is clicked/tapped
-    $('.mobile-nav .menu-item-has-children a').click(function(e) {
-        e.preventDefault();
+    var alreadyClicked = false;
+    $('.mobile-nav .menu-item-has-children > a').click(function(e) {
+        if ( !alreadyClicked ) {
+            e.preventDefault();
+            alreadyClicked = true;
+        }
         $(this).toggleClass('sub-menu-active');
         $(this).next().slideToggle(200);
     });
