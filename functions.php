@@ -111,7 +111,12 @@ function frg_list_pages_with_intro( $args ) {
 |--------------------------------------------------------------------------
 */
 function register_main_menu() {
-    register_nav_menu( 'main-menu', __('Main Menu') );
+    // register_nav_menu( 'main-menu', __('Main Menu') );
+    register_nav_menus( array(
+        'main-menu' => __('Main Menu'),
+        'need-help-menu' => __('Need Help Menu'),
+        'company-menu' => __('Company Menu')
+    ) );
 }
 add_action( 'init', 'register_main_menu' );
 

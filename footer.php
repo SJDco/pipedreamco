@@ -9,18 +9,22 @@
 
         <div class="medium-4 large-3 large-offset-2 columns">
             <h5>Need Help</h5>
-            <li><a href="#">Size Charts</a></li>
-            <li><a href="#">Returns &amp; Exchanges</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping Information</a></li>
+
+            <?php wp_nav_menu( array(
+                'theme_location' => 'need-help-menu',
+                'items_wrap' => '%3$s'
+            ) ); ?>
+
         </div>
 
         <div class="medium-4 large-3 columns">
             <h5>Company</h5>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+
+            <?php wp_nav_menu( array(
+                'theme_location' => 'company-menu',
+                'items_wrap' => '%3$s'
+            ) ); ?>
+
         </div>
 
         <div class="medium-4 large-3 columns end">
