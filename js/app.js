@@ -14,6 +14,9 @@ $(function () {
     // Configure matchHeight on the .matchHeight class
     $('.matchHeight').matchHeight();
 
+    // Match the height of woocommerce titles
+    $('.products .product h3').matchHeight();
+
     // Animate the hamburger when clicked
     $('#animated-hamburger').click(function() {
         $(this).toggleClass("active");
