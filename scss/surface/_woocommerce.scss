@@ -92,6 +92,14 @@
 */
 
 .woocommerce-page {
+
+    .images {
+
+        .attachment-shop_single {
+            padding: 0 96px;
+        }
+    }
+
     .product_title {
         color: $dark !important;
         font-weight: normal !important;
