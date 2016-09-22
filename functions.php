@@ -154,7 +154,7 @@ add_action('woocommerce_after_main_content', 'pipedream_content_wrapper_end', 10
 
 function pipedream_content_wrapper_start() {
     if ( is_post_type_archive( 'product' )) {
-        get_template_part('parts/page-hero');
+        // get_template_part('parts/page-hero');
     }
     get_template_part('parts/site-notification');
     echo '<div class="row">';
