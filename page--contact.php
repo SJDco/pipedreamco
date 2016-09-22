@@ -31,8 +31,10 @@ get_header(); ?>
     </div>
 
     <div class="small-7 columns">
-
-        <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' ); ?>
+        <p>
+            
+        </p>
+        <?php echo do_shortcode( '[formidable id="2" minimize="1"]' ); ?>
 
     </div>
 
