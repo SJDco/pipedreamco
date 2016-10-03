@@ -21,6 +21,11 @@
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+
+    <meta name="description" content="The Pipedream Co team is made up of Tim and Monica, a partnership with endless amounts of love, support and faith.">
+
     <?php wp_head(); ?>
 
 </head>
