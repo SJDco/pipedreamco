@@ -58,6 +58,7 @@ footer.footer {
         padding: 10px;
     }
 }
+
 #gform_submit_button_1 {
     background-color: transparent;
     border: 2px solid $primary;
@@ -73,4 +74,14 @@ footer.footer {
 
 .woocommerce .stock {
     display: none;
+}
+
+.cart-link {
+    li {
+        display: inline-block;
+        margin-right: 24px;
+        a {
+            font-size: 20px;
+        }
+    }
 }

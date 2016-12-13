@@ -1,3 +1,5 @@
+$floating_cart_breakpoint: 1293px;
+
 header.nav {
     position: relative;
     // background-color: $shade;
@@ -27,6 +29,10 @@ header.nav {
 
             &:last-child a {
                 padding-right: 0;
+            }
+            
+            &.cart_count_link a {
+                padding-right: 16px;
             }
 
             a {
@@ -201,7 +207,7 @@ header.nav {
     border-radius: 10px 0 0 10px;
     transition: .2s ease all;
 
-    @include breakpoint(1293) {
+    @include breakpoint($floating_cart_breakpoint) {
         display: block;
     }
 
@@ -216,5 +222,12 @@ header.nav {
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.hide-for-floating-cart {
+    display: static;
+    @include breakpoint($floating_cart_breakpoint) {
+        display: none;
     }
 }

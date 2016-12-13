@@ -211,3 +211,31 @@ function show_size_chart() {
 // 	}
 //
 // }
+
+/** Add store notice regarding broken checkout on Mobile */
+add_action('woocommerce_before_checkout_form', 'add_broken_notice');
+function add_broken_notice() { ?>
+    
+    <div class="woocommerce-error">
+        Unfortunately, we're aware of some issues affecting the checkout process on mobile devices. If you are experiencing them, please try to complete the transaction on a computer.
+    </div>
+    
+<? }
+
+/*
+ * Add custom cart link to main menu
+ */
+ add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
+ function your_custom_menu_item ( $items, $args ) {
+    if ($args->theme_location == 'main-menu') {
+        $number_of_items_in_cart = WC()->cart->get_cart_contents_count();
+        $items = "<span class='hide-for-floating-cart'>" . get_cart_count_link() . '</span>' . $items;
+    }
+    return $items;
+ }
+ 
+ function get_cart_count_link() {
+     $number_of_items_in_cart = WC()->cart->get_cart_contents_count();
+     $link = "<li class='cart_count_link'><a href='" . wc_get_cart_url() . "'><i class='fa fa-shopping-cart'></i> $number_of_items_in_cart</a></li>";
+     return $number_of_items_in_cart > 0 ? $link : "";
+ }

@@ -44,6 +44,11 @@
                     <ul class="nav__nav show-for-medium">
                         <?php get_template_part('parts/links'); ?>
                     </ul>
+                    <div class="cart-link">
+                        <span class="hide-for-medium">
+                            <?php echo get_cart_count_link(); ?>
+                        </span>
+                    </div>
                     <div id="animated-hamburger" class="hide-for-medium ">
                         <span></span>
                         <span></span>
