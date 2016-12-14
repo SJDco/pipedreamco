@@ -157,3 +157,16 @@
 .wc_payment_methods {
     border-bottom-color: $primary !important;
 }
+
+/*
+|--------------------------------------------------------------------------
+| Sale Badges
+|--------------------------------------------------------------------------
+*/
+.onsale {
+    background-color: #cf1126 !important;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1000;
+}
