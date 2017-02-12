@@ -28,7 +28,7 @@
                     "field_name": "Instagram API Key",
                     "input_type": "text",
                     "message": "Do not share this key with anyone.",
-                    "readonly": true
+                    "readonly": false
                 },
                 {
                     "field_name": "Instagram Search Term",
